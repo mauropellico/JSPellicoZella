@@ -1,0 +1,174 @@
+* {
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid black;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.pagina-general {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* CALCULADORA */
+.calculadora-javascript {
+    margin: 1em;
+    text-align: center;
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    border: 2px double black;
+    padding: 1em;
+    height: 90%;
+}
+
+.bloque-resultado {
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.bloque-resultado .resultado {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    height: 2em;
+    border: 1px solid black;
+    text-align: left;
+    justify-content: center;
+}
+
+.bloque-resultado .boton-anadir-resultado {
+    margin: 10px 0px 10px 0px;
+    background-color: #735aff;
+    color: white;
+}
+
+.bloque-valores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bloque-valores button {
+    margin: 5px;
+}
+
+.bloque-valores p {
+    margin: 5px;
+}
+
+.transferir-varios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.transferir-varios button {
+    height: 30px;
+}
+
+.transferir-varios img {
+    margin: 5px 5px 5px 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.bloque-valores input {
+    margin: 5px;
+}
+
+.botones-operacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em;
+}
+
+.botones-operacion button {
+    margin: 5px;
+}
+
+
+.tabla-general {
+    height: 60%;
+    border: 2px solid black;
+}
+
+.tabla-resultados {
+    height: 100%;
+    margin: 1em;
+    text-align: center;
+}
+
+.botones-bajo-promedio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em;
+}
+
+.botones-bajo-promedio button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.botones-bajo-promedio div {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bloque-manual{
+    margin: 1em;
+    text-align: center;
+}
+.lista-manual {
+    border: 2px double black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1em;
+}
+
+.lista-manual .primer-fila-manual {
+    display: flex;
+    flex-direction: column;
+    margin:5px 5px 20px 5px;
+}
+.lista-manual button{
+    margin: 5px 0px 0px 0px;
+    background-color: #735aff;
+    color: white;
+    width:75%;
+}
+
+.lista-json {
+    border: 2px double black;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista-json button{
+    margin: 5px 0px 0px 0px;
+    background-color: #735aff;
+    color: white;
+    width:75%;
+}

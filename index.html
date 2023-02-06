@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/calculator-fill.svg">
+    <title>Calculadora JS</title>
+</head>
+
+<body>
+    <h1>Calculadora JS</h1>
+    <div class="pagina-general">
+        <div class="calculadora-javascript">
+            <h2>Calculadora</h2>
+            <div class="calculadora">
+                <table>
+                    <div class="bloque-resultado">
+                        <div class="resultado" id="campo-resultado"></div>
+                        <button class="boton-anadir-resultado" type="button" id="boton-anadir">Añadir resultado a la
+                            tabla</button>
+                    </div>
+                    <div class="bloque-valores">
+                        <div></div>
+                        <div class="transferir-varios">
+                            <button class="pegar-resultado" type="button" id="boton-pegar">Pegar resultado</button>
+                            <img src="img/arrow-down.svg">
+                        </div>
+                        <p>Primer valor</p>
+                        <input type="text" id="primer-valor" value="">
+                        <p>Segundo valor</p>
+                        <input type="text" id="segundo-valor" value="">
+                    </div>
+                    <div class="botones-operacion">
+                        <button type="button" id="boton-sumar">Sumar</button>
+                        <button type="button" id="boton-restar">Restar</button>
+                        <button type="button" id="boton-multiplicar">Multiplicar</button>
+                        <button type="button" id="boton-dividir">Dividir</button>
+                    </div>
+                    <button class="borrar-resultado" type="button" id="boton-borrar">Borrar</button>
+                </table>
+            </div>
+        </div>
+        <div class="tabla-resultados">
+            <h2>Tabla de resultados</h2>
+            <div class="tabla-general">
+                <div class="tabla" id="tabla-promedios"></div>
+            </div>
+            <div class="botones-bajo-promedio">
+                <button type="button" id="boton-promediar">Promedio</button>
+                <div id="campo-promedios"></div>
+            </div>
+            <button type="button" id="boton-reiniciar">Reiniciar</button>
+        </div>
+        <div class="bloque-manual">
+            <h2>Operación manual</h2>
+            <div class="lista-manual">
+                <div class="primer-fila-manual">
+                    <p>Ingrese un valor manualmente</p>
+                    <input type="text" id="valor-manual" value="">
+                </div>
+                <button type="button" id="boton-anadir-manual">Añadir valor a la
+                    tabla</button>
+            </div>
+            <h2>Cargar desde base de datos</h2>
+            <div class="lista-json">
+                <div class="primer-fila-manual">
+                    <p>Ingrese valores desde JSON</p>
+                    <button type="button" id="boton-anadir-json">Añadir JSON</button>
+                    <p><small>Datos en base a Tº máxima en la primer semana de Enero 2023</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="proyecto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
